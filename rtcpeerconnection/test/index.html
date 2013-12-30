@@ -13,7 +13,7 @@
     <![endif]-->
   </head>
 
-  <body class="">
+  <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -23,65 +23,39 @@
       </div>
     </div>
 
-    <div id="main" class="container">
-
-      <div class="span4">
-        <h3>Welcome <span id="user">1</span>!</h3>
-        <p>Click on any online user to initiate a chat.</p>
-      </div>
-
-      <br>
-
-      <div class="span2 well" id="users">
-      <div id="MQ=="><a onclick="initiateCall('1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 1</a><br></div><div id="Mg=="><a onclick="initiateCall('2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 2</a><br></div><div id="dGVzdDE="><a onclick="initiateCall('test1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test1</a><br></div><div id="VGVzdDI="><a onclick="initiateCall('Test2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Test2</a><br></div><div id="dGVzdDM="><a onclick="initiateCall('test3');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test3</a><br></div><div id="RGVubmlz"><a onclick="initiateCall('Dennis');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Dennis</a><br></div><div id="MQ=="><a onclick="initiateCall('1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 1</a><br></div><div id="Mg=="><a onclick="initiateCall('2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 2</a><br></div><div id="dGVzdDE="><a onclick="initiateCall('test1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test1</a><br></div><div id="VGVzdDI="><a onclick="initiateCall('Test2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Test2</a><br></div><div id="dGVzdDM="><a onclick="initiateCall('test3');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test3</a><br></div><div id="RGVubmlz"><a onclick="initiateCall('Dennis');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Dennis</a><br></div><div id="MQ=="><a onclick="initiateCall('1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 1</a><br></div><div id="Mg=="><a onclick="initiateCall('2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 2</a><br></div><div id="dGVzdDE="><a onclick="initiateCall('test1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test1</a><br></div><div id="VGVzdDI="><a onclick="initiateCall('Test2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Test2</a><br></div><div id="dGVzdDM="><a onclick="initiateCall('test3');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test3</a><br></div><div id="RGVubmlz"><a onclick="initiateCall('Dennis');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Dennis</a><br></div><div id="MQ=="><a onclick="initiateCall('1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 1</a><br></div><div id="Mg=="><a onclick="initiateCall('2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> 2</a><br></div><div id="dGVzdDE="><a onclick="initiateCall('test1');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test1</a><br></div><div id="VGVzdDI="><a onclick="initiateCall('Test2');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Test2</a><br></div><div id="dGVzdDM="><a onclick="initiateCall('test3');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> test3</a><br></div><div id="RGVubmlz"><a onclick="initiateCall('Dennis');" class="btn btn-block btn-inverse"><i class="icon-user icon-white"></i> Dennis</a><br></div></div>
-
-      <div style="display: none;" class="modal" id="incomingCall" tabindex="-1" role="dialog" aria-labelledby="incomingCall" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3>Incoming Call</h3>
-        </div>
-        <div class="modal-body">
-          <img src="Gupshup_files/incoming.png"><br><p>&nbsp;</p>
-          <p>You have an incoming call from <span id="incomingUser"></span></p>
-          <audio id="incomingRing" src="Gupshup_files/ring.ogv" loop="">
-        </audio></div>
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Reject</button>
-          <button id="incomingAccept" class="btn btn-primary">Accept</button>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="call" class="container" style="display: none;">
-      <span id="dialing">
-        <img src="Gupshup_files/loading.gif">
-        <b>Dialing...</b>
-      </span>
-      <span id="hangup" style="display: none;">
-        <a class="btn btn-danger" onclick="endCall();">Hang Up</a>
-      </span>
-      <span>
-        <h3>Remote</h3>
-        <video id="remotevideo" controls="controls" height="480" width="640">
-      </video></span>
-      <span>
-        <h3>Local</h3>
-        <video id="localvideo" controls="controls" height="240" width="320">
-      </video></span>
-    </div>
-
     <div class="container">
-      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#debug">Hide Debug</button>
-      <br>
-      <pre id="debug" class="collapse in"></pre>
+
+      
+        <div class="alert alert-block alert-error">
+          <h4 class="alert-heading">You have been logged out!</h4>
+        </div>
+      
+
+      <div class="hero-unit">
+        <h1>[ˈɡʌpʃʌp] n.,</h1>
+        <p>A quick and easy way to chit chat across browsers!</p>
+        <div id="loading" style="display:none;">
+          <img src="Gupshup_files/loading.gif">
+        </div>
+        <div id="login-box" style="display: block;">
+          <p>
+            
+              </p><div class="input-append">
+                <input class="span2" id="email" type="text">
+                <button class="btn" type="button" onclick="doLogin(document.getElementById('email').value);">Sign in</button>
+              </div>
+            
+          <p></p>
+        </div>
+      </div>
+
     </div>
 
     <script src="Gupshup_files/include.js"></script>
 
     <script src="Gupshup_files/jquery.js"></script>
     <script src="Gupshup_files/bootstrap.js"></script>
-    <script src="Gupshup_files/chat.js"></script>
+    <script src="Gupshup_files/login.js"></script><iframe src="Gupshup_files/communication_iframe.htm" style="display: none;"></iframe>
   
 
 </body></html>
