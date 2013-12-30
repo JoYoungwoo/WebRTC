@@ -17,7 +17,7 @@ function prereqs() {
         jQuery.post(
           "logout", null,
           function() { redirect("You have been logged out!"); }
-        ).error(function() { redirect("Logout failed!"); });
+        ).error(function() { //redirect("Logout failed!"); });
       }
     });
   }
@@ -31,7 +31,7 @@ function doLogin(ast) {
   jQuery.post(
     "login", {assertion: ast},
     function() { window.location.reload(); }
-  ).error(function() { redirect("Login failed!"); });
+  ).error(function() { //redirect("Login failed!"); });
 }
 
 function redirect(msg, force) {
